@@ -9,10 +9,8 @@ def interface():
 	        return
 	    elif choice == '1':
 	    	HDL_driver()
-   
-interface()
 
-def HDL_drive():
+def HDL_driver():
 	hdl_input = HDL_input()
 	hdl_message = HDL_normal(hdl_input)
 	hdl_output (hdl_input,hdl_message)
@@ -33,3 +31,7 @@ def HDL_normal(hdl):
 def HDL_output(hdl, analysis):
 	print("The HDL test result is {}".format(hdl))
 	print ("That is {}".format(analysis))
+
+
+if __name__ == "__main__":
+	interface()
